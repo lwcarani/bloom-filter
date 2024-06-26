@@ -1,6 +1,0 @@
-description = ""
-requires = ""
-archive(byte) = "bloom_filter.cma"
-archive(native) = "bloom_filter.cmxa"
-plugin(byte) = "bloom_filter.cma"
-plugin(native) = "bloom_filter.cmxs"
