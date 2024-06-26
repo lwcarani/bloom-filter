@@ -1,0 +1,18 @@
+lib: [
+  "_build/install/default/lib/bloom_filter/META"
+  "_build/install/default/lib/bloom_filter/bloom_filter.a"
+  "_build/install/default/lib/bloom_filter/bloom_filter.cma"
+  "_build/install/default/lib/bloom_filter/bloom_filter.cmi"
+  "_build/install/default/lib/bloom_filter/bloom_filter.cmt"
+  "_build/install/default/lib/bloom_filter/bloom_filter.cmx"
+  "_build/install/default/lib/bloom_filter/bloom_filter.cmxa"
+  "_build/install/default/lib/bloom_filter/bloom_filter.ml"
+  "_build/install/default/lib/bloom_filter/dune-package"
+  "_build/install/default/lib/bloom_filter/opam"
+]
+libexec: [
+  "_build/install/default/lib/bloom_filter/bloom_filter.cmxs"
+]
+bin: [
+  "_build/install/default/bin/bloom_filter"
+]

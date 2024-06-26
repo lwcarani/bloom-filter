@@ -1,0 +1,4 @@
+(executable
+ (public_name bloom_filter)
+ (name main)
+ (libraries bloom_filter))

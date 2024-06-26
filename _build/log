@@ -1,0 +1,16 @@
+# dune exec bloom_filter -- -build words.txt words.bf 42
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/lwcarani/.cache/dune/db
+# Workspace root: /home/lwcarani/bloom_filter
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/lwcarani/.opam/cs3110-2023fa/bin/ocamlc.opt -config > /tmp/dune_c4c011_output

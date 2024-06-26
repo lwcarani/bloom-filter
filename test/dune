@@ -1,0 +1,3 @@
+(test
+ (name test_bloom_filter)
+ (libraries bloom_filter ounit2))
