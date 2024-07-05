@@ -51,7 +51,12 @@ Here's the OCaml code that implements the bloom filter module:
    * @return A new Bloom filter instance.
    *)
   let create items_count false_pos_prob =
-    (* Calculate optimal filter size *)
+    (* Calculate optimal filter size 
+     * The formula m = -(n * ln p) / (ln 2)^2 is derived from the optimal 
+     * false positive probability equation, where:
+     * m = filter size in bits
+     * n = expected number of items
+     * p = desired false positive probability *)
     let num = (-. (float_of_int items_count)) *. (log false_pos_prob) in 
     let size = (num) /. ((log 2.)**2.) |> ceil |> int_of_float in
     (* Calculate optimal number of hash functions *)
@@ -89,6 +94,9 @@ Here's the OCaml code that implements the bloom filter module:
    * @param filter The Bloom filter to check.
    * @param str The string to check for.
    * @return true if the element might be in the set, false if it definitely is not.
+   * Note: Due to the probabilistic nature of Bloom filters, this function may 
+   * return true for elements that were not actually added to the filter (false positive).
+   * However, it will never return false for elements that were added (no false negatives).
    *)
   let probably_contains filter str =
     let rec check i =
