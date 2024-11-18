@@ -233,7 +233,6 @@ ship: Probably in set
 brunch: Probably in set
 ```
 
-```
 If you pass in the wrong version number, you'll get an error:
 ```cmd
 lwcarani@DESKTOP:~/bloom_filter$ dune exec bloom_filter words.bf 42 walrus aardvark lion biscuit ocean ship brunch
